@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-transition-enter-active, .page-transition-leave-active {
+  transition: all 0.4s;
+}
+.page-transition-enter-from, .page-transition-leave-to {
+  overflow: hidden;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.blob-enter-active, .blob-leave-active {
+  transition: all 0.4s;
+}
+.blob-enter-from, .blob-leave-to {
+  overflow: hidden;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+@keyframes rainbow {
+  from {
+    background-color: hsl(0, 50%, 100%)
+  }
+  to {
+    background-color: hsl(360, 50%, 100%)
+  }
+}

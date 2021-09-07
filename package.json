@@ -1,0 +1,37 @@
+{
+  "name": "blobmaker",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:typed": "vue-tsc --noEmit && vite build",
+    "deploy": "vite build && firebase deploy",
+    "deploy:staging": "vite build && firebase hosting:channel:deploy staging",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "buffer": "^6.0.3",
+    "canvg": "^3.0.7",
+    "file-saver": "^2.0.5",
+    "postcss": "^8.3.6",
+    "random-word-slugs": "^0.0.5",
+    "tailwindcss": "^2.2.9",
+    "vue": "^3.2.6",
+    "vue-tippy": "^6.0.0-alpha.32",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.3",
+    "@types/node": "^16.7.10",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.17.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.2",
+    "vue-tsc": "^0.3.0"
+  }
+}
